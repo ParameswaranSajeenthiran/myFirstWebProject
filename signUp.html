@@ -1,0 +1,97 @@
+DOCTYPE html>
+<html >
+<head>
+  <title> TV+</title>
+  <meta charset="utf-8">
+<link rel="icon" href="img/logo2.png" type="image/png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style ="background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top  ">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"><img src="img/logo.png" style="width:150px;height:70px;"></a>
+        <ul class="navbar-nav">
+      <!-- Links -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="homePage.html">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">ADD+</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  SORT BY
+            </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Love</a>
+                <a class="dropdown-item" href="#">Triller</a>
+                <a class="dropdown-item" href="#">Horror</a>
+              </div>
+          </li>
+          <li>
+            <div>  <form class="form-inline" action="/action_page.php">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+            </div>
+          </li>
+
+          <li >
+            <div  style="    position: absolute;
+                top: 0px;
+                right:  0px;
+                transform: translate(-200%, 80%); "class="container;">
+     <a href="login.html"><button type="button" class="btn btn-danger">Login</button></a>
+
+            </div>
+          </li>
+          </ul>
+
+
+
+        </nav>
+
+        <div class="container">
+
+          <form style="text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);width:30%; heigth:40% ;background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5550595238095238) 0%, rgba(30,5,112,1) 100%); "   action="/action_page.php">
+<div><h1 style="color :white;">Sign Up </h1></div>
+            <div class="form-group">
+              <label style="color:white;" for="nm">Name:</label>
+              <input type="fname" class="form-control" id="nm" placeholder="Enter name" name="email">
+            </div>
+            <div class="form-group">
+              <label  style="color:white;" for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+
+            <div class="form-group">
+              <label   style="color:white;" for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div><h5  style="color:white;">by signing up you agree with
+              <a style ="text-align:center;" href="#">terms and conditions</a></h5></div>
+            <div><h5  style="color:white;">Already signed up ? Then
+               <a style ="text-align:center;" href="#">LOGIN</a> now</h5></div>
+            <button type="submit" class="btn btn-primary  btn-block">SIGN UP</button>
+        </form>
+      </div>
+      </body>
+</html>

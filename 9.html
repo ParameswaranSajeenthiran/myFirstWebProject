@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title> TV+</title>
+
+  <link rel="icon" href="img/logo2.png" type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="style.css">
+  <style>
+
+  /* Position text in the middle of the page/image */
+
+
+  .hero-image {
+    background: url(img/9bg.jpeg) no-repeat center;
+    background-size: cover;
+    height: 700px;
+    position:relative;
+  }
+
+  .hero-text{
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    transform: translate(0%, 150%);
+    color: white;
+
+  }
+
+
+
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 30%;
+    height: 10%;
+  }
+  #grad1 {
+
+background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+  </style>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"><img src="img/logo.png" style="width:150px;height:70px;"></a>
+   <ul class="navbar-nav">
+      <!-- Links -->
+
+        <li class="nav-item">
+      <a class="nav-link" href="homePage.html">HOME</a>
+    </li>
+
+  <li class="nav-item">
+  <a class="nav-link" href="add.html">ADD+</a>
+  </li>
+        <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+         SORT BY
+       </a>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="#">Action</a>
+         <a class="dropdown-item" href="#">Love</a>
+         <a class="dropdown-item" href="#">Triller</a>
+         <a class="dropdown-item" href="#">Horror</a>
+       </div>
+     </li>
+     <li><div>  <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form></div>
+     </li>
+     <li><div>
+       <div class="container">
+
+
+       <!-- Button to Open the Modal -->
+       <button  type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal2">
+         Sign Up
+       </button>
+
+       <!-- The Modal -->
+
+              <div class="modal fade" id="myModal2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 style="text-align:center;">Sign Up</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <p>
+                      <div class="container">
+
+                <form action="/action_page.php">
+
+                  <div class="form-group">
+                    <label for="nm">Name:</label>
+                    <input type="fname" class="form-control" id="nm" placeholder="Enter name" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                  </div>
+            <div><pre>by signing up you agree with <a style ="text-align:center;" href="#">terms and conditions</a></pre></div>
+            <div><pre>Already signed up ? Then <a style ="text-align:center;" href="#">LOGIN</a> now</pre></div>
+                  <button type="submit" class="btn btn-primary  btn-block">SIGN UP</button>
+                </form>
+              </div>
+            </p>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+  </div></li>
+     <li >
+       <div class="container">
+
+
+         <!-- Button to Open the Modal -->
+         <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal1">
+           Log In
+         </button>
+
+         <!-- The Modal -->
+
+
+                <div class="modal fade" id="myModal1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title"> login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <p>
+                          <div class="container">
+
+                    <form action="/action_page.php">
+
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                      </div>
+                <div><a style ="text-align:center;" href="#">forgot your password</a></div>
+                <div><a s href="#">you don't have an account?Sign Up</a></div>
+                <hr>
+                      <button type="submit" class="btn btn-success btn-block">LOGIN</button>
+
+                <hr>
+                            <button type="submit" class="btn btn-danger  btn-block">login in with google</button>
+                                  <button type="submit" class="btn btn-primary  btn-block">login with facebook</button>
+                    </form>
+                  </div>
+                </p>      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+       </div>
+     </li>
+  </ul>
+
+
+    </nav>
+<div>
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:30px">
+
+   House of Cards<br>
+    2013|18+|6 Seasons|Political| TV Shows<br>
+    With Frank out of the picture, Claire Underwood steps fully into her own as the first woman president, but faces formidable threats to her legacy.</a>
+     <br>Starring:Robin Wright, Michael Kelly, Diane Lane
+   <br>  Creators:Beau Willimon</h1>
+    <button  class="btn btn-danger btn-lg"><i class='fas fa-caret-right' style='font-size:24px'></i>Watch first Episode<br></button>
+  <button   class="btn btn-danger btn-lg"> <i class='fas fa-plus'>Add</i></button>  <button   class="btn btn-danger btn-lg"><i class='fas fa-share-alt'></i></button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>

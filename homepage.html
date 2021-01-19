@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title> TV+</title>
+  <meta charset="utf-8">
+<link rel="icon" href="img/logo2.png" type="image/png">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--cover background image-->
+<div class="hero-image">
+  <div class="hero-text">
+  <i class='fab fa-apple' style="font-size:50px; width:200px;height:100px; position: absolute;
+      top:50%;
+      right: 50%;
+        transform: translate(50%, -150%);">TV+</i>
+
+    <h1 style="font-size:50px"></h1></i>
+    <h3>Enjoy Wacthing Ulimited TV shows And Movies</h3>
+<h2>Creat A New Account and get a 3 day free trial , cancel anytime
+  </div>
+<!--modal for sign up-->
+<div class="container">
+
+  <!-- Button to Open the Modal -->
+  <button  style="transform: translate(350%, 1100%);"type="button"
+  class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal1">
+    Log In
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"> login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>
+            <div class="container">
+
+                <form action="/action_page.php">
+
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                 </div>
+                 <div class="form-group">
+                   <label for="pwd">Password:</label>
+                   <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                 </div>
+                 <div><a style ="text-align:center;" href="#">forgot your password</a></div>
+                 <div><a s href="#">you don't have an account?Sign Up</a></div>
+                 <hr>
+                 <button type="submit" class="btn btn-success btn-block">LOGIN</button>
+
+                 <hr>
+                 <button type="submit" class="btn btn-danger  btn-block">
+                   <img src="img/google ogo.jpeg" style="width:40px; height:40px;"> login in with google</button>
+                <button type="submit" class="btn btn-primary  btn-block">
+                  <img src="img/facebook.jpeg" style="width:40px; height:40px;"> login with facebook</button>
+              </form>
+            </div>
+            </p>
+          </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+<!--modal for sign up-->
+<!-- Button to Open the Modal -->
+<button  style="transform: translate(290%, -750%);"type="button"
+ class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal2">
+  Sign Up
+</button>
+
+<!-- The Modal -->
+
+<div class="modal fade" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 style="text-align:center;">Sign Up</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+      <p>
+        <div class="container">
+
+          <form action="/action_page.php">
+
+            <div class="form-group">
+              <label for="nm">Name:</label>
+              <input type="fname" class="form-control" id="nm" placeholder="Enter name" name="email">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div><pre>by signing up you agree with
+              <a style ="text-align:center;" href="#">terms and conditions</a></pre></div>
+            <div><pre>Already signed up ? Then
+               <a style ="text-align:center;" href="#">LOGIN</a> now</pre></div>
+            <button type="submit" class="btn btn-primary  btn-block">SIGN UP</button>
+        </form>
+      </div>
+      </p>
+    </div>
+
+      <!-- Modal footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top  ">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><img src="img/logo.png" style="width:150px;height:70px;"></a>
+      <ul class="navbar-nav">
+    <!-- Links -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="homePage.html">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="add.html">ADD+</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                SORT BY
+          </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Love</a>
+              <a class="dropdown-item" href="#">Triller</a>
+              <a class="dropdown-item" href="#">Horror</a>
+            </div>
+        </li>
+        <li>
+          <div>  <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+                </form>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="container">
+
+<!--modal for sign up-->
+     <!-- Button to Open the Modal -->
+     <button  type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal2">
+       Sign Up
+     </button>
+
+     <!-- The Modal -->
+
+            <div class="modal fade" id="myModal2">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 style="text-align:center;">Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  <p>
+                    <div class="container">
+
+                      <form action="/action_page.php">
+
+                        <div class="form-group">
+                          <label for="nm">Name:</label>
+                          <input type="fname" class="form-control" id="nm"
+                          placeholder="Enter name" name="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email"
+                           placeholder="Enter email" name="email">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd"
+                          placeholder="Enter password" name="pswd">
+                        </div>
+                        <div><pre>by signing up you agree with
+                          <a style ="text-align:center;" href="#">terms and conditions</a></pre></div>
+                        <div><pre>Already signed up ? Then
+                          <a style ="text-align:center;" href="#">LOGIN</a> now</pre></div>
+                          <button type="submit" class="btn btn-primary  btn-block">SIGN UP</button>
+                        </form>
+                      </div>
+                      </p>
+                  </div>
+
+                    <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li >
+          <div class="container">
+
+
+       <!-- Button to Open the Modal -->
+       <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModal1">
+         Log In
+       </button>
+
+       <!-- The Modal -->
+
+
+              <div class="modal fade" id="myModal1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"> login</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <p>
+                        <div class="container">
+
+                  <form action="/action_page.php">
+
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+              <div><a style ="text-align:center;" href="#">forgot your password</a></div>
+              <div><a s href="#">you don't have an account?Sign Up</a></div>
+              <hr>
+                    <button type="submit" class="btn btn-success btn-block">LOGIN</button>
+
+              <hr>
+                          <button type="submit" class="btn btn-danger  btn-block">login in with google</button>
+                                <button type="submit" class="btn btn-primary  btn-block">login with facebook</button>
+                  </form>
+                </div>
+              </p>      </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </li>
+        </ul><br>
+      </nav>
+      <div><p> A B C D E F G H I J K L M N O P Q R S T U V X Y Z</p></div>
+
+  <div class="tab-content">
+    <div id="home" class="container-fluid tab-pane active">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul  style="list-style-type:none;" class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div id="grad1" class="carousel-inner">
+    <div class="carousel-item active">
+      <div>
+        <div class="hero-image" style="  background: url(img/14bg.jpeg) no-repeat center; ">
+        <div class="hero-text" style="  top: 25%;
+          right: 0%;
+          transform: translate(0%, -50%);">
+          <h1 style="font-size:30px">
+
+         <p style="font-weight:bold;">The Expansion<br>
+          2013|18+|6 Seasons|Political| TV Shows</p>
+
+         <p style="font-weight:bold;">  <br>Starring:Robin Wright, Michael Kelly, Diane Lane
+         <br>  Creators:Beau Willimon</p></h1>
+          <button  class="btn btn-danger btn-lg"><i class='fas fa-caret-right' style='font-size:24px'></i>Watch first Episode<br></button>
+        <button   class="btn btn-danger btn-lg"> <i class='fas fa-plus'>Add</i></button>  <button   class="btn btn-danger btn-lg"><i class='fas fa-share-alt'></i></button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div>
+        <div class="hero-image" style="  background: url(img/24bg.jpeg) no-repeat center;">
+          <div class="hero-text" style="  top: 25%;
+            left: 0%;
+            transform: translate(0%,120%);">
+            <h1 style="font-size:30px">
+          <h1 style="font-size:30px">
+
+         <p style="font-weight:bold;">See <br>
+          201|18+|1 Seasons|drama| TV Shows<br>
+
+        Created by:	Steven Knight
+        Starring	:  Jason Momoa,,Alfre Woodard,  Yadira Guevara-Prip</p>
+          <button  class="btn btn-danger btn-lg"><i class='fas fa-caret-right' style='font-size:24px'></i>Watch first Episode<br></button>
+        <button   class="btn btn-danger btn-lg"> <i class='fas fa-plus'>Add</i></button>  <button   class="btn btn-danger btn-lg"><i class='fas fa-share-alt'></i></button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div>
+        <div class="hero-image" style=" background: url(img/33bg.jpeg) no-repeat center;">
+          <div class="hero-text" style="  top: 25%;
+            right: 0%;
+            transform: translate(-10%,90%);">
+            <h1 style="font-size:30px">
+          <h1 style="font-size:30px">
+
+         <p style="font-weight:bold;">
+          2020 | 16+ | 1 Seasons | sports | TV Shows
+
+      <br>Starring:Robin Wright, Michael Kelly, Diane Lane
+         <br>  Creators:Beau Willimon</p>
+          <button  class="btn btn-danger btn-lg"><i class='fas fa-caret-right' style='font-size:24px'></i>Watch first Episode<br></button>
+        <button   class="btn btn-danger btn-lg"> <i class='fas fa-plus'>Add</i></button>  <button   class="btn btn-danger btn-lg"><i class='fas fa-share-alt'></i></button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div>
+        <div class="hero-image" style="  background: url(img/27bg.jpeg) no-repeat center;">
+        <div class="hero-text" style="top: 8px;
+          left: 16px;
+          transform: translate(0%, 10%);
+          color: white;">
+          <h1 style="font-size:30px">
+
+         <p style="font-weight:bold;">  Dickinson<br>
+            2020 | 18+ |1 Seasons | Dark comedy | TV Shows
+
+           <br>Starring:Hailee Steinfeld
+           <br>  Creators: Alena Smith</p></h1>
+          <button  class="btn btn-danger btn-lg"><i class='fas fa-caret-right' style='font-size:24px'></i>Watch first Episode<br></button>
+        <button   class="btn btn-danger btn-lg"> <i class='fas fa-plus'>Add</i></button>  <button   class="btn btn-danger btn-lg"><i class='fas fa-share-alt'></i></button>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<!--most viewed-->
+
+
+<div id="demo1" class="carousel slide" data-ride="carouse1">
+  <div>
+
+           <h4 style ="  position: absolute;
+             top: 2%;
+             left: 45%;
+             font-size:40px;
+             transform: translate(60%, ,0%);
+             color: white;"> <strong>Most Viewed</strong></h4>
+
+         </div>
+  <!-- Indicators -->
+  <ul class="carouse1-indicators">
+    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+    <li data-target="#demo1" data-slide-to="1"></li>
+    <li data-target="#demo1" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow --><!--most viewed--><!--1-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+        <div class="container-fluid">
+        <br>
+
+          <div class="card-deck">
+            <div class="card bg-primary">
+              <div class="container11">
+                <img src="img/1.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/1.jpeg);">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+
+                  <a href="1.html" > <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                <a href="add.html">    <button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                  </div>
+                  Money Heist<br>
+      201718+4 SeasonsTV Thrillers<br>
+      Eight thieves take hostages and <br>
+      lock themselves in the Royal Mint of Spain as <br>
+      a criminal mastermind manipulates<br> the police to carry out his plan.
+      <br>Starring:Úrsula Corberó, Álvaro Morte, Itziar Ituño<br>
+      Creators:Álex Pina
+    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card bg-warning">
+
+              <div class="container11">
+             <img src="img/9.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/9.jpeg);">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+
+                    <a href="8.html">   <button  class="btn btn-outline-danger">Watch  <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                <a href="add.html">    <button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                    </div>
+                    House of Cards<br>
+                      2013|18+|6 Seasons|Political| TV Shows<br>
+                      With Frank out of the picture, Claire Underwood <br>steps fully into her own as<br> the first woman president, but faces <br>formidable threats to her legacy.</a>
+                      <br>Starring:Robin Wright, Michael Kelly, Diane Lane<br>
+                      Creators :Beau Willimon
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card bg-success">
+              <div class="container11">
+                <img src="img/4.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay"style="background-image:url(img/4.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+
+                <a href="4.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                    </div>
+                  Star Trek: Discovery<br>
+                    2018 | 16+ | 3 Seasons   | Alien Sci-Fi<br>
+                    After a century of silence, war erupts<br>
+                    between the Federation and Klingon Empire, <br>
+                    with a disgraced Starfleet<br> officer at the center
+                    of the conflict.
+                    <br>Starring:Sonequa Martin-Green, Doug Jones, Anthony Rapp
+                    <br>Creators:Bryan Fuller, Alex Kurtzman
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card bg-danger">
+              <div class="container11">
+                <img src="img/14.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/14.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+                     <a href="14.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                     <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+                  </div>
+                  The Expansion<br>
+                   2019 | 18+ | 5 Seasons| Sci-Fic | TV Shows</p>
+                   Two centuries in the future, a missing person links an<br> asteroid belt detective,
+                   the captain of an ice freighter<br> and a diplomat trying to avert a war.
+                   <br> Starring:Thomas Jane, Steven Strait, Cas Anvar<br>
+                   Creators:Mark Fergus, Hawk Ostby
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    </div>
+
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid">
+
+<!--mostviewed 2nd set-->
+        <div class="card-deck">
+          <div class="card bg-primary">
+            <div class="container11">
+              <img src="img/24.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay" style="background-image:url(img/24.jpeg);">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+                  <a href="5.html"><button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                  <button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button>
+
+                </div>
+                See <br>
+                 201 |18+  | 1 Seasons | drama |  TV Shows<br>
+                 In a future where humankind has lost the <br>
+                 ability to see and is forced to interact in<br>
+                 new ways, a set of twins with sight is <br>
+                 born, challenging the status quo. <br>
+                 Created by:	Steven Knight<br>
+                 Starring	:  Jason Momoa,,Alfre Woodard,  <br>Yadira Guevara-Prip
+               </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="card bg-warning">
+            <div class="container11">
+              <img src="img/3.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay"style="background-image:url(img/3.jpeg)">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+                <a href="6.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                  <a href ="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                The Queen's Gambit<br>
+                2020 | 18+ | 1 Season |Social Issue  |TV Dramas<br>
+                In a 1950s orphanage, a young girl reveals <br>
+                an astonishing talent for chess and begins
+                <br>an unlikely journey to stardom while
+                <br> grappling with addiction.<br>
+                Starring:Anya Taylor-Joy, Bill Camp,<br> Marielle Heller<br>
+                Creators:Scott Frank, Allan Scott
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <div class="card bg-success">
+            <div class="container11">
+              <img src="img/26.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay"style="background-image:url(img/26.jpeg)">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+                <a href="7.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                Tehran<br>
+                 2020 | 18+ | 1 Season | spy | TV Shows<br>
+               A Mossad agent goes undercover on her <br>first mission in Iran's capital, which also happens<br>
+                to be the place of her birth......
+        .<br>
+                 <br>Starring:Niv Sultan, Shaun Toub, Menashe Noy
+                <br>  Creators:Cosmote TV, Donna Product</div>
+              </div>
+            </div>
+          </div>
+            <div class="card bg-danger">
+              <div class="container11">
+                <img src="img/27.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/27.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+                <a href="27.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                  <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                Dickinson<br>
+                 2020 | 18+ |1 Seasons | Dark comedy | TV Shows<br>
+                 Budding writer Emily Dickinson<br> uses her outsider's perspective to explore the<br> constraints o<br>
+                 f society, gender and family in the 19th century.
+                <br>Starring:Hailee Steinfeld
+                <br>  Creators: Alena Smith</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a style="  position: absolute;
+   top: 50%;
+   left: 0%;
+   transform: translate(-40%, -100%);" class="carousel-control-prev" href="#demo1" data-slide="prev">
+     <span class="carousel-control-prev-icon"></span>
+   </a>
+   <a style="  position: absolute;
+   top: 50%;
+   right: 0%;
+   transform: translate(40%, -100%); "class="carousel-control-next" href="#demo1" data-slide="next">
+     <span class="carousel-control-next-icon"></span>
+   </a>
+ </div>
+<!--top rated-->
+
+<div id="demo2" class="carousel slide" data-ride="carouse1">
+  <div>
+
+           <h4 style ="  position: absolute;
+             top: 2%;
+             left: 45%;
+             font-size:40px;
+             transform: translate(60%, ,0%);
+             color: white;"> <strong>Top rated</strong></h4>
+
+         </div>
+  <!-- Indicators -->
+  <ul class="carouse1-indicators">
+    <li data-target="#demo2" data-slide-to="0" class="active"></li>
+    <li data-target="#demo2" data-slide-to="1"></li>
+    <li data-target="#demo2" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+        <div class="container-fluid">
+
+<!--rated first set-->
+          <div class="card-deck">
+            <div class="card bg-primary">
+              <div class="container11">
+                <img src="img/50.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/50.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+
+                    <a href="/50.html"><button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                    <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                  </div>
+                  Tom Hanks greyhounds<br>
+                    2020 | 18+ | 2hrs | Actioin/drama | Movie<br>
+                    U.S. Navy Cmdr. Ernest Krause is assigned to <br>
+                    lead an Allied convoy across the Atlantic during<br>
+                    World War II. His convoy, however, is pursued by<br>
+                    German U-boats in the longest Battle of the Atlantic.    <br>Starring: Tom Hanks<br>
+                    Creators:Beau Willimon
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-warning">
+              <div class="container11">
+                <img src="img/39.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/39.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+
+                      <a href="39.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                    <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                  </div>
+                  Greatness code<br>
+                    TV-PG | 6min | Documentary, Short, Biography | TV Series (2020– )<br><br><br>
+                    Stories from the greatest athletes in the world,<br> focusing on the pivotal moments <br>
+                    that defined their careers.
+                    <br>  Starring:Usain Bolt,Alex Morgan
+                    <br>  Creators:Religion of Sports</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card bg-success">
+              <div class="container11">
+                <img src="img/40.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img40.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+
+                       <a href="40.html"><button  class="btn btn-outline-danger">Watch
+                         <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                     <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+                  </div>
+                    Palmer<br>
+                      2020 | 18+ | Drama | TV Shows<br>
+                      After 12 years in prison, former<br> high school football star Eddie Palmer
+                      returns home to put his life back <br>together—and forms
+                      an unlikely bond with sam .<br><br>
+                      Starring: Justin Timberlake ,Ryder Allen
+                      <br> Creators:Beau Willimon
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="card bg-danger">
+              <div class="container11">
+                <img src="img/41.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+                <div class="overlay" style="background-image:url(img/41.jpeg)">
+                  <div class="text"style="font-size:12px;">
+                     <div class="container">
+
+                       <a href="41.html"><button  class="btn btn-outline-danger">Watch
+                        <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                      <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+                  </div>
+                    The Elephant Queen<br>
+                      2018 | 16+ | 3 Seasons | | TV Shows<br>
+                      Join Athena, the majestic matriarch, as she leads<br>
+                      her elephant herd across an unforgiving
+                      <br> African landscape filled with vibrant wildlife.<br>
+                      <br>Starring:Robin Wright, Michael Kelly, Diane Lane<br>
+                      Creators:Beau Willimon
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+      </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container-fluid">
+<!--rated second set-->
+
+        <div class="card-deck">
+          <div class="card bg-primary">
+            <div class="container11">
+              <img src="img/32.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay"  style="background-image:url(img/32.jpeg)">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+                     <a href="32.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                                         <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                Trying<br>
+
+                  2020 | 16+ | 1 Season | Drama/Comedy | TV Shows<br>
+                  Jason and Nikki want a baby more than<br>
+                  anything else, but it seems to be the one<br>
+                  thing they are unable to get, so they decide<br> to adopt.
+                  <br>Starring: Rafe Spall, Esther Smith,
+                  <br>  Creators:Co producers
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="card bg-warning">
+            <div class="container11">
+              <img src="img/31.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay" style="background-image:url(img/31.jpeg)">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+
+                     <a href="31.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                     <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                  mystery quest raven's banquet<br>
+                    2020 | 18+ |  2 Seasons | Sitcom | TV Shows<br>
+                    The team behind the bigest video game of <br>all-time is tasked
+                    with building worlds,<br> but the most hard-fought battles<br>
+                    don't occur in the game -- they happen in the office.<br>
+                    <br>Starring: Rob McElhenney, Charlotte Nicdaoe<br>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="card bg-success">
+            <div class="container11">
+              <img src="img/33.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay" style="background-image:url(img/33.jpeg)">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+
+                     <a href="33.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                                         <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                Ted lasso<br>
+                 2020 | 16+ | 1 Seasons | sports | TV Shows</p>
+                 Small-time football coach<br> Ted Lasso is hired to coach a professional<br>
+                 soccer team in England, despite having <br>no experience coaching soccer.<br>
+                 staring:Jason Sudeikis, Hannah Waddingha
+                 <br>
+                 creators:Jason Sudeikis, Hannah Waddingha</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="card bg-danger">
+            <div class="container11">
+              <img src="img/29.jpeg" alt="Avatar"  style=" width:100% ; height:100%;">
+              <div class="overlay" style="background-image:url(img/29.jpeg)">
+                <div class="text"style="font-size:12px;">
+                   <div class="container">
+
+
+
+
+
+                     <a href="29.html">  <button  class="btn btn-outline-danger">Watch <i class='fas fa-caret-right' style='font-size:24px'></i></button></a>
+                                         <a href="add.html"><button   class="btn btn-outline-danger">Add <i class='fas fa-plus'></i></button></a>
+
+                </div>
+                  Long Way Up<br>
+                  2019 | 16+ | 1 Seasons|Political| TV Shows<br>
+                  Ewan McGregor and his friend Charley<br>
+                  Boorman travel on electric<br> Harley-Davidsons 13,000 miles<br>
+                  through Central and South America.
+                  <br>Starring:: Ewan McGregor (Self) ·<br> Charley Boorman (Self)<br>
+                  Creators: David Alexanian,<br> Charley Boorman, Russ Malkin.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a style=" ; position: absolute;
+   top: 50%;
+   left: 0%;
+   transform: translate(-40%, -100%);" class="carousel-control-prev" href="#demo2" data-slide="prev">
+     <span class="carousel-control-prev-icon" ></span>
+   </a>
+   <a style="  color:grey ;position: absolute;
+   top: 50%;
+   right: 0%;
+   transform: translate(40%, -100%); "class="carousel-control-next" href="#demo2" data-slide="next">
+     <span class="carousel-control-next-icon"></span>
+   </a>
+ </div>
+<br>
+
+
+
+
+
+
+
+</body>
+</html>
